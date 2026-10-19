@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velas Dangy | Artesanías de Lujo en El Salvador</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastel: {
+                            pink: '#F9EBEA',
+                            blush: '#F5C6CB',
+                            cream: '#FCFBF7',
+                            ivory: '#FFFDF9',
+                            sage: '#E2EBE4',
+                            rose: '#E8A0BF',
+                            dusty: '#D8B4F8',
+                            gold: '#D4AF37',
+                            goldsoft: '#E6CA65',
+                            golddark: '#9A7B1C'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        cormorant: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Montserrat"', 'sans-serif'],
+                        script: ['"Great Vibes"', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-script-text {
+            background: linear-gradient(135deg, #E6CA65 0%, #D4AF37 50%, #9A7B1C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-marble-pastel {
+            background-color: #FFFDF9;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(245, 198, 203, 0.25) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(226, 235, 228, 0.3) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, rgba(249, 235, 234, 0.3) 0px, transparent 50%);
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 30px -10px rgba(224, 170, 185, 0.2);
+        }
+        .pastel-card {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .pastel-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 35px -12px rgba(212, 175, 55, 0.18);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFFDF9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E8A0BF;
+            border-radius: 999px;
+        }
+    </style>
+</head>
+<body class="bg-pastel-ivory font-sans text-stone-700 antialiased selection:bg-pastel-pink selection:text-stone-800">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 bg-pastel-ivory/90 backdrop-blur-md border-b border-pastel-pink/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="flex flex-col items-start">
+                    <div class="flex items-center gap-2">
+                        <span class="font-script text-3xl sm:text-4xl text-pastel-golddark font-bold leading-none tracking-wide">Velas Dangy</span>
+                        <span class="text-xl">🌹</span>
+                    </div>
+                    <span class="text-[9px] tracking-[0.25em] uppercase text-stone-500 font-medium block mt-0.5">El Salvador</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-xs font-medium tracking-widest uppercase text-stone-600">
+                <a href="#colecciones" class="hover:text-pastel-golddark transition-colors">Colecciones</a>
+                <a href="#personalizar" class="hover:text-pastel-golddark transition-colors">Hacer Pedido</a>
+                <a href="#cuidados" class="hover:text-pastel-golddark transition-colors">Guía de Cuidado</a>
+            </nav>
+
+            <!-- Quick Action CTA -->
+            <div>
+                <a href="#personalizar" class="bg-pastel-pink hover:bg-pastel-blush text-stone-800 border border-pastel-rose/40 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 shadow-sm flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-emerald-600 text-sm"></i>
+                    <span>Encargar</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28 bg-marble-pastel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pastel-pink border border-pastel-rose/30 text-stone-700 text-xs font-semibold tracking-widest uppercase">
+                        <span class="text-xs">🇸🇻</span>
+                        <span>100% Hecho a Mano en El Salvador</span>
+                    </div>
+
+                    <!-- SVG Logo Header -->
+                    <div class="py-2">
+                        <svg class="w-full max-w-md mx-auto lg:mx-0 h-auto" viewBox="0 0 450 120" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#E6CA65" />
+                                    <stop offset="50%" stop-color="#D4AF37" />
+                                    <stop offset="100%" stop-color="#9A7B1C" />
+                                </linearGradient>
+                            </defs>
+                            <text x="10" y="75" font-family="'Great Vibes', cursive" font-size="78" fill="url(#goldGradient)">Velas Dangy</text>
+                            <!-- Rose Emblem -->
+                            <g transform="translate(370, 25) scale(0.9)">
+                                <path d="M 20 10 C 25 2, 35 2, 40 10 C 45 20, 35 30, 20 42 C 5 30, -5 20, 0 10 C 5 2, 15 2, 20 10 Z" fill="url(#goldGradient)" />
+                                <path d="M 20 18 C 12 28, 28 28, 20 18 Z" fill="#FFFDF9" opacity="0.6"/>
+                                <path d="M 20 42 Q 22 55 20 68" stroke="url(#goldGradient)" stroke-width="3" fill="none"/>
+                                <path d="M 20 52 Q 32 48 38 52" stroke="url(#goldGradient)" stroke-width="2.5" fill="none"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal text-stone-800 leading-tight tracking-tight">
+                        Calidez & Elegancia <br/>
+                        <span class="font-script italic text-pastel-golddark text-4xl sm:text-6xl font-bold">Hecha a Mano</span>
+                    </h1>
+
+                    <p class="text-stone-600 text-sm sm:text-base max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Velas artesanales de alta calidad con formas florales exclusivas. Perfuma tu hogar con fragancias delicadas de rosa silvestre y notas cálidas de manzana y canela.
+                    </p>
+
+                    <!-- Features Pills -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-3 pt-2">
+                        <span class="px-3.5 py-1.5 rounded-full bg-pastel-sage/50 text-stone-700 text-xs font-medium border border-stone-200/60">
+                            ✨ Diseños Exclusivos
+                        </span>
+                        <span class="px-3.5 py-1.5 rounded-full bg-pastel-pink/60 text-stone-700 text-xs font-medium border border-stone-200/60">
+                            🌸 Aromas Naturales
+                        </span>
+                        <span class="px-3.5 py-1.5 rounded-full bg-pastel-cream text-stone-700 text-xs font-medium border border-pastel-gold/40">
+                            🎁 Ideal para Regalos
+                        </span>
+                    </div>
+
+                    <!-- CTA Group -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#colecciones" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-pastel-goldsoft via-pastel-gold to-pastel-golddark text-white font-medium text-xs uppercase tracking-widest transition-all duration-300 text-center shadow-md hover:shadow-lg">
+                            Ver Colecciones
+                        </a>
+                        <a href="#personalizar" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white hover:bg-pastel-pink text-stone-800 border border-pastel-rose/50 font-medium text-xs uppercase tracking-widest transition-all duration-300 text-center flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-600 text-sm"></i>
+                            <span>Pedir por WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Visual Candle Displays -->
+                <div class="lg:col-span-5 relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        
+                        <!-- Candle Card 1: Rose -->
+                        <div class="p-4 rounded-3xl bg-white border border-pastel-pink shadow-md text-center space-y-3 transform -rotate-2 hover:rotate-0 transition-transform duration-300">
+                            <div class="w-full aspect-square rounded-2xl bg-gradient-to-br from-rose-100 to-rose-200 flex items-center justify-center relative overflow-hidden p-4">
+                                <img src="images/rosa.jpg" alt="Vela Rosa Rosas" class="w-full h-full object-cover rounded-2xl shadow-inner">
+                            </div>
+                            <h3 class="font-serif font-bold text-stone-800 text-sm">Rosa Rosas</h3>
+                            <p class="text-[11px] text-stone-500">Aroma Dulce & Floral</p>
+                        </div>
+
+                        <!-- Candle Card 2: Apple Cinnamon -->
+                        <div class="p-4 rounded-3xl bg-white border border-pastel-sage shadow-md text-center space-y-3 transform translate-y-6 rotate-2 hover:rotate-0 transition-transform duration-300">
+                            <div class="w-full aspect-square rounded-2xl bg-gradient-to-br from-red-100 via-red-200 to-rose-100 flex items-center justify-center relative overflow-hidden p-4">
+                                <img src="images/canela 1.jpg" alt="Vela Manzana & Canela" class="w-full h-full object-cover rounded-2xl shadow-inner">
+                            </div>
+                            <h3 class="font-serif font-bold text-stone-800 text-sm">Manzana & Canela</h3>
+                            <p class="text-[11px] text-stone-500">Aroma Cálido & Especiado</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Collections Section -->
+    <section id="colecciones" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs uppercase tracking-[0.2em] text-pastel-golddark font-semibold">Catálogo Exclusivo</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-normal text-stone-800">Nuestras Colecciones</h2>
+                <div class="w-16 h-0.5 bg-pastel-gold mx-auto"></div>
+                <p class="text-stone-500 text-xs sm:text-sm font-light">Cada vela es modelada a mano artesanalmente con ceras de máxima calidad.</p>
+            </div>
+
+            <!-- Collections Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                
+                <!-- Collection 1: Rosa Rosas -->
+                <div class="pastel-card rounded-3xl bg-pastel-ivory border border-pastel-pink overflow-hidden shadow-sm flex flex-col sm:flex-row">
+                    <div class="sm:w-1/2 bg-pastel-pink/40 min-h-64">
+                        <img class="w-full h-full object-cover" src="images/rosa.jpg" alt="Colección Rosa Rosas">
+                    </div>
+                    <div class="sm:w-1/2 p-6 sm:p-8 flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <div class="flex gap-2">
+                                <span class="bg-pastel-pink text-stone-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Rosa</span>
+                                <span class="bg-pastel-sage/50 text-stone-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Aroma Dulce</span>
+                            </div>
+                            <h3 class="font-serif text-2xl font-bold text-stone-800">Colección Rosa Rosas</h3>
+                            <p class="text-xs text-stone-600 font-light leading-relaxed">
+                                Hermosas velas moldeadas en forma de rosas florecidas. Brindan una fragancia floral suave, romántica y envolvente.
+                            </p>
+                            <div class="text-sm font-semibold text-pastel-golddark pt-1">
+                                $2.50 USD
+                            </div>
+                        </div>
+                        <div class="pt-6">
+                            <a href="#personalizar" onclick="selectCollection('rosas')" class="block w-full text-center py-2.5 rounded-full bg-stone-800 hover:bg-pastel-golddark text-white text-xs font-semibold uppercase tracking-wider transition-colors">
+                                Seleccionar para Pedido
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collection 2: Manzana y Canela -->
+                <div class="pastel-card rounded-3xl bg-pastel-ivory border border-pastel-sage overflow-hidden shadow-sm flex flex-col sm:flex-row">
+                    <div class="sm:w-1/2 bg-pastel-pink/40 min-h-64">
+                        <img class="w-full h-full object-cover" src="images/canelas.jpg" alt="Colección Rosa Rosas">
+                    </div>
+                    <div class="sm:w-1/2 p-6 sm:p-8 flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <div class="flex gap-2">
+                                <span class="bg-red-100 text-red-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Bitono Rojo/Blanco</span>
+                                <span class="bg-pastel-cream text-stone-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider border border-pastel-gold/30">Cálido</span>
+                            </div>
+                            <h3 class="font-serif text-2xl font-bold text-stone-800">Manzana & Canela</h3>
+                            <p class="text-xs text-stone-600 font-light leading-relaxed">
+                                Velas florales con textura escultural en colores blanco y rojo. Llenan el hogar con aroma acogedor a manzana horneada y canela.
+                            </p>
+                            <div class="text-sm font-semibold text-pastel-golddark pt-1">
+                                $2.50 USD
+                            </div>
+                        </div>
+                        <div class="pt-6">
+                            <a href="#personalizar" onclick="selectCollection('canela')" class="block w-full text-center py-2.5 rounded-full bg-stone-800 hover:bg-pastel-golddark text-white text-xs font-semibold uppercase tracking-wider transition-colors">
+                                Seleccionar para Pedido
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Catalog & Custom Order Builder -->
+    <section id="personalizar" class="py-20 bg-marble-pastel border-y border-pastel-pink/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs uppercase tracking-[0.2em] text-pastel-golddark font-semibold">Cotizador Directo</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-normal text-stone-800">Diseña tu Pedido</h2>
+                <div class="w-16 h-0.5 bg-pastel-gold mx-auto"></div>
+                <p class="text-stone-500 text-xs sm:text-sm font-light">Calcula el total de tu combo y recíbelo mediante envío en El Salvador.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Controls Form -->
+                <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border border-pastel-pink shadow-sm space-y-8">
+                    
+                    <!-- 1. Candles Selection -->
+                    <div class="space-y-4">
+                        <h3 class="font-serif text-lg font-bold text-stone-800 flex items-center gap-2">
+                            <span class="w-6 h-6 rounded-full bg-pastel-pink text-stone-800 text-xs flex items-center justify-center font-sans font-bold">1</span>
+                            Selecciona tus Velas
+                        </h3>
+
+                        <div class="space-y-3">
+                            <!-- Rosa Rosas -->
+                            <div class="flex items-center justify-between p-4 rounded-2xl bg-pastel-ivory border border-stone-200/80">
+                                <div>
+                                    <h4 class="font-semibold text-xs sm:text-sm text-stone-800">Vela Rosa Rosas</h4>
+                                    <p class="text-[11px] text-stone-500">$2.50 c/u • Fragancia de Rosa</p>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <button onclick="changeQty('rosas', -1)" class="w-8 h-8 rounded-full bg-white border border-stone-300 text-stone-700 font-bold hover:bg-pastel-pink transition-colors">-</button>
+                                    <span id="qty-rosas" class="w-6 text-center font-bold text-sm text-stone-800">0</span>
+                                    <button onclick="changeQty('rosas', 1)" class="w-8 h-8 rounded-full bg-white border border-stone-300 text-stone-700 font-bold hover:bg-pastel-pink transition-colors">+</button>
+                                </div>
+                            </div>
+
+                            <!-- Manzana & Canela -->
+                            <div class="flex items-center justify-between p-4 rounded-2xl bg-pastel-ivory border border-stone-200/80">
+                                <div>
+                                    <h4 class="font-semibold text-xs sm:text-sm text-stone-800">Vela Manzana & Canela</h4>
+                                    <p class="text-[11px] text-stone-500">$2.50 c/u • Fragancia Cálida</p>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <button onclick="changeQty('canela', -1)" class="w-8 h-8 rounded-full bg-white border border-stone-300 text-stone-700 font-bold hover:bg-pastel-sage transition-colors">-</button>
+                                    <span id="qty-canela" class="w-6 text-center font-bold text-sm text-stone-800">0</span>
+                                    <button onclick="changeQty('canela', 1)" class="w-8 h-8 rounded-full bg-white border border-stone-300 text-stone-700 font-bold hover:bg-pastel-sage transition-colors">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Customer Data -->
+                    <div class="space-y-4">
+                        <h3 class="font-serif text-lg font-bold text-stone-800 flex items-center gap-2">
+                            <span class="w-6 h-6 rounded-full bg-pastel-pink text-stone-800 text-xs flex items-center justify-center font-sans font-bold">3</span>
+                            Datos de Entrega
+                        </h3>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <input type="text" id="cust-name" placeholder="Tu Nombre" class="w-full bg-pastel-ivory border border-stone-200 rounded-xl p-3 text-xs focus:outline-none focus:border-pastel-gold">
+                            <input type="text" id="cust-city" placeholder="Departamento / Municipio (El Salvador)" class="w-full bg-pastel-ivory border border-stone-200 rounded-xl p-3 text-xs focus:outline-none focus:border-pastel-gold">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Live Summary Box -->
+                <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-3xl border border-pastel-gold/40 shadow-md space-y-6 sticky top-28">
+                    <h3 class="font-serif text-xl font-bold text-stone-800 pb-3 border-b border-stone-100">Resumen del Pedido</h3>
+
+                    <div id="summary-content" class="space-y-3 min-h-[90px] text-xs text-stone-600">
+                        <p class="italic text-stone-400">Agrega velas a tu pedido para comenzar a calcular.</p>
+                    </div>
+
+                    <div class="border-t border-stone-100 pt-4 space-y-2 text-xs">
+                        <div class="flex justify-between text-stone-500">
+                            <span>Subtotal:</span>
+                            <span id="summary-subtotal">$0.00 USD</span>
+                        </div>
+                        <div class="flex justify-between text-stone-500">
+                            <span>Empaque:</span>
+                            <span id="summary-pack">$0.00 USD</span>
+                        </div>
+                        <div class="flex justify-between text-sm font-bold text-stone-800 pt-2 border-t border-stone-100">
+                            <span>Total Estimado:</span>
+                            <span id="summary-total" class="text-pastel-golddark">$0.00 USD</span>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp Button -->
+                    <button onclick="submitOrderWhatsApp()" class="w-full py-4 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 shadow-md">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Encargar por WhatsApp</span>
+                    </button>
+
+                    <p class="text-[10px] text-center text-stone-400">
+                        Te atenderemos personalmente sin intermediaries. Envíos disponibles a todo El Salvador.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Essential Care Guide -->
+    <section id="cuidados" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs uppercase tracking-[0.2em] text-pastel-golddark font-semibold">Uso Adecuado</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-normal text-stone-800">Guía de Cuidados</h2>
+                <div class="w-16 h-0.5 bg-pastel-gold mx-auto"></div>
+                <p class="text-stone-500 text-xs sm:text-sm font-light">Recomendaciones simples para conservar tus velas de forma segura.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="p-6 rounded-3xl bg-pastel-pink/30 border border-pastel-pink space-y-3">
+                    <span class="text-2xl">🕯️</span>
+                    <h3 class="font-serif font-bold text-stone-800 text-base">Utiliza Base Resistente</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed font-light">
+                        Al ser velas moldeadas, colócalas siempre sobre un plato o bandeja resistente al calor para recoger la cera que se derrama.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-3xl bg-pastel-sage/30 border border-pastel-sage space-y-3">
+                    <span class="text-2xl">✂️</span>
+                    <h3 class="font-serif font-bold text-stone-800 text-base">Corta el Pábilo</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed font-light">
+                        Recorta la mecha a unos 5 mm antes de encenderla para evitar que la llama sea excesivamente grande.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-3xl bg-pastel-cream border border-pastel-gold/40 space-y-3">
+                    <span class="text-2xl">🛡️</span>
+                    <h3 class="font-serif font-bold text-stone-800 text-base">Encendido Seguro</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed font-light">
+                        Mantén las velas fuera de corrientes de aire y lejos de objetos inflamables, niños y mascotas.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pastel-ivory border-t border-pastel-pink/60 py-10 text-stone-500 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <div class="flex items-center justify-center gap-2">
+                <span class="font-script text-2xl text-pastel-golddark font-bold">Velas Dangy</span>
+                <span>🌹</span>
+            </div>
+            <p class="text-[11px] text-stone-400">Hecho a mano en El Salvador • Velas Artesanales con Aromas Exclusivos</p>
+            <p class="text-[10px] text-stone-400 pt-2 border-t border-stone-200/50">© 2026 Velas Dangy. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- App Logic -->
+    <script>
+        // Número de WhatsApp: código de país + número, solo dígitos (sin +, espacios ni guiones). Ej: 50371234567
+        const WHATSAPP_NUMBER = '50377947276';
+
+        const state = {
+            rosas: 0,
+            canela: 0,
+            packPrice: 0,
+            packName: 'Estándar Protegido'
+        };
+
+        const prices = {
+            rosas: 2.50,
+            canela: 2.50
+        };
+
+        function selectCollection(type) {
+            state[type] = Math.max(1, state[type] + 1);
+            document.getElementById(`qty-${type}`).innerText = state[type];
+            updateCalculator();
+        }
+
+        function changeQty(type, delta) {
+            state[type] = Math.max(0, state[type] + delta);
+            document.getElementById(`qty-${type}`).innerText = state[type];
+            updateCalculator();
+        }
+
+        function setPackaging(price, name) {
+            state.packPrice = parseFloat(price);
+            state.packName = name;
+            updateCalculator();
+        }
+
+        function updateCalculator() {
+            const subtotal = (state.rosas * prices.rosas) + (state.canela * prices.canela);
+            const packaging = subtotal > 0 ? state.packPrice : 0;
+            const total = subtotal + packaging;
+
+            const summaryEl = document.getElementById('summary-content');
+
+            if (subtotal === 0) {
+                summaryEl.innerHTML = '<p class="italic text-stone-400">Agrega velas a tu pedido para comenzar a calcular.</p>';
+            } else {
+                let html = '';
+                if (state.rosas > 0) {
+                    html += `<div class="flex justify-between"><span>${state.rosas}x Vela Rosa Rosas</span><span class="font-semibold">$${(state.rosas * prices.rosas).toFixed(2)}</span></div>`;
+                }
+                if (state.canela > 0) {
+                    html += `<div class="flex justify-between"><span>${state.canela}x Vela Manzana & Canela</span><span class="font-semibold">$${(state.canela * prices.canela).toFixed(2)}</span></div>`;
+                }
+                if (packaging > 0) {
+                    html += `<div class="flex justify-between text-pastel-golddark"><span>+ ${state.packName}</span><span class="font-semibold">$${packaging.toFixed(2)}</span></div>`;
+                }
+                summaryEl.innerHTML = html;
+            }
+
+            document.getElementById('summary-subtotal').innerText = `$${subtotal.toFixed(2)} USD`;
+            document.getElementById('summary-pack').innerText = `$${packaging.toFixed(2)} USD`;
+            document.getElementById('summary-total').innerText = `$${total.toFixed(2)} USD`;
+        }
+
+        function submitOrderWhatsApp() {
+            const subtotal = (state.rosas * prices.rosas) + (state.canela * prices.canela);
+            if (subtotal === 0) {
+                alert('Por favor selecciona al menos 1 vela para realizar tu pedido.');
+                return;
+            }
+
+            const name = document.getElementById('cust-name').value.trim() || 'Cliente';
+            const city = document.getElementById('cust-city').value.trim() || 'El Salvador';
+
+            let msg = `Hola *Velas Dangy*, me gustaría realizar el siguiente pedido:\n\n`;
+            msg += `👤 *Nombre:* ${name}\n`;
+            msg += `📍 *Ubicación:* ${city}\n\n`;
+            msg += `🕯️ *Detalle del Pedido:*\n`;
+
+            if (state.rosas > 0) {
+                msg += `- ${state.rosas}x Vela Rosa Rosas ($${(state.rosas * prices.rosas).toFixed(2)})\n`;
+            }
+            if (state.canela > 0) {
+                msg += `- ${state.canela}x Vela Manzana & Canela ($${(state.canela * prices.canela).toFixed(2)})\n`;
+            }
+
+            msg += `💰 *Total Estimado:* $${(subtotal + state.packPrice).toFixed(2)} USD\n\n`;
+            msg += `¿Me ayudan a confirmar disponibilidad y coordinar la entrega? ¡Muchas gracias!`;
+
+            const encoded = encodeURIComponent(msg);
+            window.open(`https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encoded}`, '_blank');
+        }
+    </script>
+</body>
+</html>
